@@ -1,0 +1,1145 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light" class="scroll-smooth">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PowderDreams</title>
+  <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon" />
+
+  <!-- google font  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+
+  <link rel="stylesheet" href="./css/style.min.css" />
+</head>
+
+<body class="font-Urbanist bg-gray-100">
+
+  <header class="py-6 md:py-12 fixed top-0 left-0 w-full px-2 z-50">
+    <nav class="bg-transparent">
+      <div class="containers">
+        <div class="flex items-center justify-between ">
+          <!-- Logo -->
+          <div class="flex items-center">
+            <img src="./img/logo.png" alt="logo" class="w-[130px]">
+          </div>
+
+          <!-- Desktop Menu -->
+          <div class="hidden lg:flex items-center space-x-8">
+            <div class="relative group">
+              <button
+                class="text-center justify-start text-gray-800 text-base font-semibold leading-normal flex gap-2 items-center cursor-pointer">Helsiki
+                <span><img src="./img/arrow-down.png" alt="arrow-down"></span></button>
+              <div class="dropdown absolute bg-white shadow-lg rounded-md mt-0 z-10 w-40">
+                <a href="#" class="block px-4 py-2 text-gray-800 hover:bg-gray-100 text-base font-medium">Option 1</a>
+                <a href="#" class="block px-4 py-2 text-gray-800 hover:bg-gray-100 text-base font-medium">Option 2</a>
+              </div>
+            </div>
+            <div class="relative group">
+              <button
+                class="text-center justify-start text-gray-800 text-base font-semibold leading-normal flex gap-2 items-center cursor-pointer">Ski
+                <span><img src="./img/arrow-down.png" alt="arrow-down"></span></button>
+              <div class="dropdown absolute bg-white shadow-lg rounded-md mt-0 z-10 w-40">
+                <a href="#" class="block px-4 py-2 text-gray-800 hover:bg-gray-100 text-base font-medium">Option 1</a>
+                <a href="#" class="block px-4 py-2 text-gray-800 hover:bg-gray-100 text-base font-medium">Option 2</a>
+              </div>
+            </div>
+            <div class="relative group">
+              <button
+                class="text-center justify-start text-gray-800 text-base font-semibold leading-normal flex gap-2 items-center cursor-pointer">Winter
+                Adventure <span><img src="./img/arrow-down.png" alt="arrow-down"></span></button>
+              <div class="dropdown absolute bg-white shadow-lg rounded-md mt-0 z-10 w-40">
+                <a href="#" class="block px-4 py-2 text-gray-800 hover:bg-gray-100 text-base font-medium">Option 1</a>
+                <a href="#" class="block px-4 py-2 text-gray-800 hover:bg-gray-100 text-base font-medium">Option 2</a>
+              </div>
+            </div>
+            <div class="relative group">
+              <button
+                class="text-center justify-start text-gray-800 text-base font-semibold leading-normal flex gap-2 items-center cursor-pointer">About
+                Us <span><img src="./img/arrow-down.png" alt="arrow-down"></span></button>
+              <div class="dropdown absolute bg-white shadow-lg rounded-md mt-0 z-10 w-40">
+                <a href="#" class="block px-4 py-2 text-gray-800 hover:bg-gray-100 text-base font-medium">Option 1</a>
+                <a href="#" class="block px-4 py-2 text-gray-800 hover:bg-gray-100 text-base font-medium">Option 2</a>
+              </div>
+            </div>
+
+          </div>
+          <div class="lg:flex gap-2 hidden">
+            <button
+              class=" flex gap-2 items-center cursor-pointer    px-2.5 py-[5px] rounded-md  outline-offset-[-1px] outline-gray-400 border border-solid border-gray-400  text-center justify-start text-zinc-950 text-base font-normal leading-normal hover:bg-gray-200"><span><img
+                  src="./img/global.svg" alt=""></span>
+              ENG</button>
+            <div class="relative">
+              <input type="text" placeholder="Search"
+                class="focus:outline-none focus:ring-1 pl-8 pr-2.5 py-[5px] rounded-md  outline-offset-[-1px] outline-gray-400 border border-solid border-gray-400 text-end">
+              <span class="absolute left-2 top-1/2 transform -translate-y-1/2"><img src="./img/search-normal.svg"
+                  alt="Search"></span>
+            </div>
+          </div>
+          <!-- Mobile Menu Button -->
+          <div class="lg:hidden flex items-center">
+            <button id="menu-toggle" class="text-gray-800 focus:outline-none">
+              <img src="./img/mobile-button.svg" alt="mobile">
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Mobile Menu -->
+      <div id="mobile-menu" class="hidden lg:hidden">
+        <button id="close-menu" class="absolute top-4 right-4 text-gray-700 focus:outline-none z-50">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+          </svg>
+        </button>
+        <div class="px-2 pt-2 pb-3 space-y-5 sm:px-3 text-center">
+          <div class="relative group">
+            <button
+              class="mobile-dropdown-toggle text-center justify-center text-gray-800 text-base font-semibold leading-normal flex gap-2 w-full  ">Helsiki
+              <span><img src="./img/arrow-down.png" alt="arrow-down"></span></button>
+            <div class="mobile-dropdown hidden bg-white shadow-lg rounded-md mt-0 z-10">
+              <a href="#" class="block px-4 py-2 text-gray-800 hover:bg-gray-100 text-base font-medium">Option 1</a>
+              <a href="#" class="block px-4 py-2 text-gray-800 hover:bg-gray-100 text-base font-medium">Option 2</a>
+            </div>
+          </div>
+          <div class="relative group">
+            <button
+              class="mobile-dropdown-toggle text-center justify-center text-gray-800 text-base font-semibold leading-normal flex gap-2 w-full  ">Ski
+              <span><img src="./img/arrow-down.png" alt="arrow-down"></span></button>
+            <div class="mobile-dropdown hidden bg-white shadow-lg rounded-md mt-0 z-10">
+              <a href="#" class="block px-4 py-2 text-gray-800 hover:bg-gray-100 text-base font-medium">Option 1</a>
+              <a href="#" class="block px-4 py-2 text-gray-800 hover:bg-gray-100 text-base font-medium">Option 2</a>
+            </div>
+          </div>
+          <div class="relative group">
+            <button
+              class="mobile-dropdown-toggle text-center justify-center text-gray-800 text-base font-semibold leading-normal flex gap-2 w-full  ">Winter
+              Adventure <span><img src="./img/arrow-down.png" alt="arrow-down"></span></button>
+            <div class="mobile-dropdown hidden bg-white shadow-lg rounded-md mt-0 z-10">
+              <a href="#" class="block px-4 py-2 text-gray-800 hover:bg-gray-100 text-base font-medium">Option 1</a>
+              <a href="#" class="block px-4 py-2 text-gray-800 hover:bg-gray-100 text-base font-medium">Option 2</a>
+            </div>
+          </div>
+          <div class="relative group">
+            <button
+              class="mobile-dropdown-toggle text-center justify-center text-gray-800 text-base font-semibold leading-normal flex gap-2 w-full  ">About
+              Us <span><img src="./img/arrow-down.png" alt="arrow-down"></span></button>
+            <div class="mobile-dropdown hidden bg-white shadow-lg rounded-md mt-0 z-10">
+              <a href="#" class="block px-4 py-2 text-gray-800 hover:bg-gray-100 text-base font-medium">Option 1</a>
+              <a href="#" class="block px-4 py-2 text-gray-800 hover:bg-gray-100 text-base font-medium">Option 2</a>
+            </div>
+          </div>
+          <div class="flex flex-wrap gap-y-5 gap-2 justify-center">
+            <button
+              class=" flex gap-2 items-center cursor-pointer    px-2.5 py-[5px] rounded-md  outline-offset-[-1px] outline-gray-400 border border-solid border-gray-400  text-center justify-start text-zinc-950 text-base font-normal leading-normal"><span><img
+                  src="./img/global.svg" alt=""></span>
+              ENG</button>
+            <div class="relative">
+              <input type="text" placeholder="Search"
+                class="focus:outline-none focus:ring-1 pl-8 pr-2.5 py-[5px] rounded-md  outline-offset-[-1px] outline-gray-400 border border-solid border-gray-400 text-end">
+              <span class="absolute left-2 top-1/2 transform -translate-y-1/2"><img src="./img/search-normal.svg"
+                  alt="Search"></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <!-- banner start  -->
+    <section>
+      <div id="slides" class="relative w-full md:min-h-screen min-h-[900px] overflow-hidden">
+        <div class="containers">
+          <div
+            class=" flex-wrap gap-x-5 px-3 py-2 bg-white rounded-lg items-center md:hidden flex w-[200px] justify-center mx-auto mb-8 absolute top-[150px] left-0 right-0 z-10">
+            <div class="">
+              <span class="text-zinc-950 text-xl md:text-2xl font-semibold leading-9 current-slide"
+                id="current-slide">01
+              </span><span class="text-gray-600 text-base font-normal leading-normal total-slide"
+                id="total-slide">/10</span>
+            </div>
+            <div class="">
+              <button
+                class="next-slide text-center justify-start text-black text-base font-normal leading-normal flex gap-2 items-center">Next
+                Slide <span><img src="./img/arrow-right-black.svg" alt=""></span>
+              </button>
+            </div>
+          </div>
+        </div>
+        <!-- slider item  -->
+        <div class="slide pt-[140px] md:pt-[180px] bg-cover bg-bottom flex items-end justify-center">
+          <div class="containers">
+            <div class=" relative">
+
+              <h1
+                class="self-stretch text-center justify-start text-5xl lg:text-6xl font-semibold lg:leading-[72px] leading-10 text-gray-500"
+                id="slide-title">
+
+              </h1>
+              <p class="lg:w-[538px] max-w-full mx-auto text-center justify-start text-gray-500 text-sm lg:text-base font-normal leading-normal mt-4"
+                id="slide-description">
+              </p>
+              <div class="flex justify-center mt-8">
+                <a href="" id="slide-button"
+                  class="px-4 py-3 bg-zinc-950 rounded-lg inline-flex justify-center items-center gap-2.5 mx-auto hover:shadow-[5px_5px_10px_0px_rgba(0,0,0,0.10)] hover:translate-y-0.5 transform transition-all duration-200">
+                  <span><img src="./img/arrow-right.png" alt="arrow-right" class="w-[18px]"></span>
+                  <span class="justify-start text-white text-base font-normal leading-normal buttonText">Start Your
+                    Journey</span>
+                </a>
+              </div>
+              <div class=" flex justify-center mt-16">
+                <img src="" alt="user-image" id="sliderImage"
+                  class=" mx-auto text-center rounded-tl-lg rounded-tr-lg shadow-[0px_-20px_84px_0px_rgba(0,0,0,0.15)] border border-gray-100">
+              </div>
+
+
+            </div>
+          </div>
+        </div>
+        <!-- slider item end  -->
+        <div class="">
+          <div
+            class="flex md:justify-between gap-6 flex-wrap items-center absolute lg:bottom-[10%] bottom-5 left-0 right-0 mx-auto  justify-center w-full containers">
+            <ul class="flex justify-center items-center gap-x-8 px-4 py-2.5 bg-white rounded-lg ">
+              <li><a href=""
+                  class="hover:shadow-[5px_5px_10px_0px_rgba(0,0,0,0.10)] hover:translate-y-0.5 transform transition-all duration-200 inline-block"><img
+                    src="./img/facebook.svg" alt="facebook"></a></li>
+              <li><a href=""
+                  class="hover:shadow-[5px_5px_10px_0px_rgba(0,0,0,0.10)] hover:translate-y-0.5 transform transition-all duration-200 inline-block"><img
+                    src="./img/Instagram.svg" alt="Instagram"></a></li>
+              <li><a href=""
+                  class="hover:shadow-[5px_5px_10px_0px_rgba(0,0,0,0.10)] hover:translate-y-0.5 transform transition-all duration-200 inline-block"><img
+                    src="./img/LinkedIn.svg" alt="LinkedIn"></a></li>
+              <li><a href=""
+                  class="hover:shadow-[5px_5px_10px_0px_rgba(0,0,0,0.10)] hover:translate-y-0.5 transform transition-all duration-200 inline-block"><img
+                    src="./img/x.svg" alt="x"></a></li>
+            </ul>
+            <div class=" flex-wrap gap-x-8 px-4 py-2.5 bg-white rounded-lg items-center md:flex hidden">
+              <div class="slide-counter">
+                <span class="current-slide text-zinc-950 text-2xl font-semibold leading-9">01
+                </span><span class="total-slide text-gray-600 text-base font-normal leading-normal">/10</span>
+              </div>
+              <div class="">
+                <button
+                  class="next-slide text-center justify-start text-black text-base font-normal leading-normal flex gap-2 items-center cursor-pointer">Next
+                  Slide <span><img src="./img/arrow-right-black.svg" alt=""></span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- banner end  -->
+
+    <!-- who we are  -->
+    <div class="whoWe lg:py-[90px] pt-[90px] pb-[50px] bg-white">
+      <div class="containers flex flex-wrap lg:justify-between justify-center gap-10 lg:flex-row-reverse">
+        <div
+          class="px-3.5 py-2.5 rounded-lg outline-1 outline-offset-[-1px] outline-gray-300 lg:hidden flex justify-center items-center gap-2.5">
+          <p class="justify-start text-zinc-950 text-base font-normal leading-normal">who we are
+          </p>
+        </div>
+        <div
+          class="min-h-[570px] lg:min-h-[720px] w-[660px] max-w-full relative bg-[url(../img/who-we-are.png)] bg-cover bg-bottom bg-no-repeat flex justify-between flex-col p-5 rounded-lg">
+          <!-- logo  -->
+          <img src="./img/logo.png" alt="img" class="w-[130px]">
+
+          <div class="p-7 bg-white rounded-lg flex flex-col justify-start items-start gap-4">
+            <h2 class="self-stretch justify-start text-zinc-950 text-lg lg:text-xl font-semibold leading-loose">
+              Private
+              Alpine Chalet Retreat</h2>
+            <div class="self-stretch flex flex-col justify-start items-start gap-2">
+              <p class="self-stretch justify-start text-gray-500 text-sm lg:text-base font-normal leading-normal">
+                Imagine
+                a week-long escape to a private chalet nestled in the heart of the Swiss Alps. Your experience begins
+                with a
+                chauffeured helicopter transfer from Geneva, offering panoramic views of snow-capped peaks.</p>
+              <h4 class="self-stretch justify-start text-zinc-950 text-sm lg:text-base font-normal leading-normal">
+                “Luxury
+                is in the details, and we weave them into every moment of your journey.”</h4>
+            </div>
+          </div>
+        </div>
+        <div class="flex flex-col justify-between items-start gap-6 w-[392px] max-w-full">
+          <div
+            class="px-3.5 py-2.5 rounded-lg outline-1 outline-offset-[-1px] outline-gray-300 lg:flex hidden justify-center items-center gap-2.5">
+            <p class="justify-start text-zinc-950 text-base font-normal leading-normal">who we are
+            </p>
+          </div>
+          <div class="flex flex-col justify-start items-start lg:gap-16 gap-8">
+            <div class="">
+              <h2
+                class="justify-start text-zinc-950 text-4xl lg:text-5xl font-semibold leading-10 lg:leading-[52.80px]">
+                <span class="">high-end
+                </span><span class="text-gray-500">winter travel
+                  experts</span>
+              </h2>
+              <p class="self-stretch justify-start text-gray-500 text-base font-normal leading-normal mt-4">
+                Lorem ipsum
+                dolor sit amet consectetur. Diam nunc nunc tellus nunc amet sem tortor ultricies. Ut viverra ornare
+                integer phasellus
+                in id cras et. </p>
+            </div>
+            <a href=""
+              class="px-4 py-3 bg-zinc-950 rounded-lg inline-flex justify-center items-center gap-2.5 hover:shadow-[5px_5px_10px_0px_rgba(0,0,0,0.10)] hover:translate-y-0.5 transform transition-all duration-200">
+              <img src="img/arrow-right.png" alt="img" class="w-[18px]">
+              <span class="justify-start text-white text-base font-normal leading-normal">See Details
+              </span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- who we end  -->
+    <!-- Our Exclusive start  -->
+    <section class="exclusive py-[50px] lg:py-20  bg-white">
+      <div class="containers">
+        <div
+          class="flex flex-col justify-center align-middle items-center gap-4 min-h-[340px] lg:min-h-[440px] bg-[url(../img/exclusive.png)] bg-cover bg-bottom bg-no-repeat rounded-lg">
+          <h4 class="justify-start text-white text-xl lg:text-2xl font-semibold leading-9">Immerse in Winter’s
+            Magic</h4>
+          <h2
+            class="self-stretch text-center justify-start text-white text-4xl lg:text-5xl font-semibold leading-10 lg:leading-[52.80px]">
+            Our Exclusive Video Journey</h2>
+        </div>
+      </div>
+    </section>
+    <!-- Our Exclusive end  -->
+
+
+
+    <!-- Explore Our Exclusive Winter Destinations start  -->
+    <div class="py-10  bg-white">
+      <div class="containers">
+        <h2 class="w-96 max-w-full text-5xl font-semibold leading-[52.80px] text-center justify-start mx-auto">
+          <span class="text-gray-500 ">Explore</span><span class="text-zinc-950 "> Our Exclusive Winter
+          </span><span class="text-gray-500 ">Destinations</span>
+        </h2>
+        <div class="self-stretch flex justify-between items-center pt-10 mb-[34px]">
+          <div class="flex justify-start items-center gap-2">
+            <button
+              class="filter-btn px-3.5 py-2.5 rounded-lg outline-none border bg-white border-gray-200 flex justify-center items-center gap-2.5  text-zinc-950 text-base font-normal leading-normal active-filter"
+              data-filter="Heliskiing">
+              Heliskiing
+
+            </button>
+            <button
+              class="filter-btn px-3.5 py-2.5 rounded-lg outline-none border bg-white border-gray-200 flex justify-center items-center gap-2.5  text-zinc-950 text-base font-normal leading-normal"
+              data-filter="Freeride">
+              Freeride
+
+            </button>
+            <button
+              class="filter-btn px-3.5 py-2.5 rounded-lg outline-none border bg-white border-gray-200 flex justify-center items-center gap-2.5  text-zinc-950 text-base font-normal leading-normal"
+              data-filter="Skitouring">
+              Skitouring
+
+            </button>
+          </div>
+          <a href=""
+            class="px-4 py-3 bg-zinc-950 rounded-lg hidden lg:flex justify-center items-center gap-2.5 text-white text-base font-normal leading-normal hover:shadow-[5px_5px_10px_0px_rgba(0,0,0,0.10)] hover:translate-y-0.5 transform transition-all duration-200">
+            <img src="./img/arrow-right.png" alt="img" class="w-[18px]">
+            <span class="">See More</span>
+          </a>
+        </div>
+        <div class="grid grid-cols-1 lg:grid-cols-4 gap-5">
+          <!-- single item start  -->
+          <div class="col-span-1 flex flex-col flex-wrap gap-8 card" data-tags="Heliskiing Freeride">
+            <div class="w-full h-80 rounded-lg inline-flex flex-col justify-between items-start relative">
+              <img src="./img/card.png" alt="card" class="w-full h-full rounded-lg object-cover object-center">
+              <div
+                class="px-2.5 py-[5px] bg-white rounded inline-flex justify-start items-center gap-2 absolute top-[15px] left-[15px]">
+                <span class="w-1.5 h-1.5 bg-zinc-950 rounded-full"></span>
+                <span class="text-center justify-start text-zinc-950 text-base font-normal leading-normal">
+                  Available</span>
+              </div>
+              <div class="text-center justify-start absolute bottom-[15px] left-[15px]">
+                <span class="text-zinc-950/50 text-sm font-normal leading-tight">Start From</span>
+                <span class="text-zinc-950 text-xl font-semibold leading-loose">$10.000/person</span>
+              </div>
+            </div>
+            <div class="flex flex-col justify-start items-start gap-8">
+              <div class="flex justify-start items-center gap-2">
+                <a href=""
+                  class="px-2.5 py-[5px] bg-gray-50 rounded-lg outline-1 outline-offset-[-1px] outline-gray-100 flex justify-center items-center gap-2.5 text-zinc-950 text-base font-normal leading-normal">
+                  Heliskiing
+                </a>
+                <a href=""
+                  class="px-2.5 py-[5px] bg-gray-50 rounded-lg outline-1 outline-offset-[-1px] outline-gray-100 flex justify-center items-center gap-2.5 text-zinc-950 text-base font-normal leading-normal">
+                  Freeride
+                </a>
+              </div>
+              <div class="self-stretch flex flex-col justify-start items-start gap-2">
+                <h4 class="self-stretch justify-start text-black text-xl font-semibold leading-loose">
+                  British
+                  Columbia, Canada</h4>
+                <p class="self-stretch justify-start text-gray-500 text-base font-normal leading-normal">
+                  Experience world-class heli-skiing in the vast powder fields of the Canadian Rockies, with luxury
+                  lodges</p>
+              </div>
+              <a href=""
+                class="px-4 py-2.5 bg-zinc-950 rounded-lg inline-flex justify-center items-center gap-2.5 hover:shadow-[5px_5px_10px_0px_rgba(0,0,0,0.10)] hover:translate-y-0.5 transform transition-all duration-200">
+                <span class="justify-start text-white text-base font-normal leading-normal">Details
+                </span>
+                <span><img src="./img/arrow-right.png" alt="arrow-right" class="w-[18px]"></span>
+              </a>
+            </div>
+          </div>
+          <!-- single item end -->
+
+          <!-- single item start  -->
+          <div class="col-span-1 flex flex-col flex-wrap gap-8 card" data-tags="Heliskiing Freeride">
+            <div class="w-full h-80 rounded-lg inline-flex flex-col justify-between items-start relative">
+              <img src="./img/card.png" alt="card" class="w-full h-full rounded-lg object-cover object-center">
+              <div
+                class="px-2.5 py-[5px] bg-white rounded inline-flex justify-start items-center gap-2 absolute top-[15px] left-[15px]">
+                <span class="w-1.5 h-1.5 bg-zinc-950 rounded-full"></span>
+                <span class="text-center justify-start text-zinc-950 text-base font-normal leading-normal">
+                  Available</span>
+              </div>
+              <div class="text-center justify-start absolute bottom-[15px] left-[15px]">
+                <span class="text-zinc-950/50 text-sm font-normal leading-tight">Start From</span>
+                <span class="text-zinc-950 text-xl font-semibold leading-loose">$10.000/person</span>
+              </div>
+            </div>
+            <div class="flex flex-col justify-start items-start gap-8">
+              <div class="flex justify-start items-center gap-2">
+                <a href=""
+                  class="px-2.5 py-[5px] bg-gray-50 rounded-lg outline-1 outline-offset-[-1px] outline-gray-100 flex justify-center items-center gap-2.5  text-zinc-950 text-base font-normal leading-normal">
+                  Heliskiing
+                </a>
+                <a href=""
+                  class="px-2.5 py-[5px] bg-gray-50 rounded-lg outline-1 outline-offset-[-1px] outline-gray-100 flex justify-center items-center gap-2.5  text-zinc-950 text-base font-normal leading-normal">
+                  Freeride
+                </a>
+              </div>
+              <div class="self-stretch flex flex-col justify-start items-start gap-2">
+                <h4 class="self-stretch justify-start text-black text-xl font-semibold leading-loose">
+                  British
+                  Columbia, Canada</h4>
+                <p class="self-stretch justify-start text-gray-500 text-base font-normal leading-normal">
+                  Experience world-class heli-skiing in the vast powder fields of the Canadian Rockies, with luxury
+                  lodges</p>
+              </div>
+              <a href=""
+                class="px-4 py-2.5 bg-zinc-950 rounded-lg inline-flex justify-center items-center gap-2.5 hover:shadow-[5px_5px_10px_0px_rgba(0,0,0,0.10)] hover:translate-y-0.5 transform transition-all duration-200">
+                <span class="justify-start text-white text-base font-normal leading-normal">Details
+                </span>
+                <span><img src="./img/arrow-right.png" alt="arrow-right" class="w-[18px]"></span>
+              </a>
+            </div>
+          </div>
+          <!-- single item end -->
+          <!-- single item start  -->
+          <div class="col-span-1 flex flex-col flex-wrap gap-8 card" data-tags="Heliskiing Skitouring">
+            <div class="w-full h-80 rounded-lg inline-flex flex-col justify-between items-start relative">
+              <img src="./img/card.png" alt="card" class="w-full h-full rounded-lg object-cover object-center">
+              <div
+                class="px-2.5 py-[5px] bg-white rounded inline-flex justify-start items-center gap-2 absolute top-[15px] left-[15px]">
+                <span class="w-1.5 h-1.5 bg-zinc-950 rounded-full"></span>
+                <span class="text-center justify-start text-zinc-950 text-base font-normal leading-normal">
+                  Available</span>
+              </div>
+              <div class="text-center justify-start absolute bottom-[15px] left-[15px]">
+                <span class="text-zinc-950/50 text-sm font-normal leading-tight">Start From</span>
+                <span class="text-zinc-950 text-xl font-semibold leading-loose">$10.000/person</span>
+              </div>
+            </div>
+            <div class="flex flex-col justify-start items-start gap-8">
+              <div class="flex justify-start items-center gap-2">
+                <a href=""
+                  class="px-2.5 py-[5px] bg-gray-50 rounded-lg outline-1 outline-offset-[-1px] outline-gray-100 flex justify-center items-center gap-2.5 text-zinc-950 text-base font-normal leading-normal">
+                  Heliskiing
+                </a>
+                <a href=""
+                  class="px-2.5 py-[5px] bg-gray-50 rounded-lg outline-1 outline-offset-[-1px] outline-gray-100 flex justify-center items-center gap-2.5 text-zinc-950 text-base font-normal leading-normal">
+                  Freeride
+                </a>
+              </div>
+              <div class="self-stretch flex flex-col justify-start items-start gap-2">
+                <h4 class="self-stretch justify-start text-black text-xl font-semibold leading-loose">
+                  British
+                  Columbia, Canada</h4>
+                <p class="self-stretch justify-start text-gray-500 text-base font-normal leading-normal">
+                  Experience world-class heli-skiing in the vast powder fields of the Canadian Rockies, with luxury
+                  lodges</p>
+              </div>
+              <a href=""
+                class="px-4 py-2.5 bg-zinc-950 rounded-lg inline-flex justify-center items-center gap-2.5 hover:shadow-[5px_5px_10px_0px_rgba(0,0,0,0.10)] hover:translate-y-0.5 transform transition-all duration-200">
+                <span class="justify-start text-white text-base font-normal leading-normal">Details
+                </span>
+                <span><img src="./img/arrow-right.png" alt="arrow-right" class="w-[18px]"></span>
+              </a>
+            </div>
+          </div>
+          <!-- single item end -->
+          <!-- single item start  -->
+          <div class="col-span-1 flex flex-col flex-wrap gap-8 card" data-tags="Heliskiing Freeride">
+            <div class="w-full h-80 rounded-lg inline-flex flex-col justify-between items-start relative">
+              <img src="./img/card.png" alt="card" class="w-full h-full rounded-lg object-cover object-center">
+              <div
+                class="px-2.5 py-[5px] bg-white rounded inline-flex justify-start items-center gap-2 absolute top-[15px] left-[15px]">
+                <span class="w-1.5 h-1.5 bg-zinc-950 rounded-full"></span>
+                <span class="text-center justify-start text-zinc-950 text-base font-normal leading-normal">
+                  Available</span>
+              </div>
+              <div class="text-center justify-start absolute bottom-[15px] left-[15px]">
+                <span class="text-zinc-950/50 text-sm font-normal leading-tight">Start From</span>
+                <span class="text-zinc-950 text-xl font-semibold leading-loose">$10.000/person</span>
+              </div>
+            </div>
+            <div class="flex flex-col justify-start items-start gap-8">
+              <div class="flex justify-start items-center gap-2">
+                <a href=""
+                  class="px-2.5 py-[5px] bg-gray-50 rounded-lg outline-1 outline-offset-[-1px] outline-gray-100 flex justify-center items-center gap-2.5 text-zinc-950 text-base font-normal leading-normal">
+                  Heliskiing
+                </a>
+                <a href=""
+                  class="px-2.5 py-[5px] bg-gray-50 rounded-lg outline-1 outline-offset-[-1px] outline-gray-100 flex justify-center items-center gap-2.5 text-zinc-950 text-base font-normal leading-normal">
+                  Freeride
+                </a>
+              </div>
+              <div class="self-stretch flex flex-col justify-start items-start gap-2">
+                <h4 class="self-stretch justify-start text-black text-xl font-semibold leading-loose">
+                  British
+                  Columbia, Canada</h4>
+                <p class="self-stretch justify-start text-gray-500 text-base font-normal leading-normal">
+                  Experience world-class heli-skiing in the vast powder fields of the Canadian Rockies, with luxury
+                  lodges</p>
+              </div>
+              <a href=""
+                class="px-4 py-2.5 bg-zinc-950 rounded-lg inline-flex justify-center items-center gap-2.5 hover:shadow-[5px_5px_10px_0px_rgba(0,0,0,0.10)] hover:translate-y-0.5 transform transition-all duration-200">
+                <span class="justify-start text-white text-base font-normal leading-normal">Details
+                </span>
+                <span><img src="./img/arrow-right.png" alt="arrow-right" class="w-[18px]"></span>
+              </a>
+            </div>
+          </div>
+          <!-- single item end -->
+
+        </div>
+        <div class="lg:hidden flex justify-center mt-16">
+          <a href=""
+            class="px-4 py-3 bg-zinc-950 rounded-lg flex justify-center items-center gap-2.5 text-white text-base font-normal leading-normal hover:shadow-[5px_5px_10px_0px_rgba(0,0,0,0.10)] hover:translate-y-0.5 transform transition-all duration-200">
+            <img src="./img/arrow-right.png" alt="img" class="w-[18px]">
+            <span class="">See More</span>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Explore Our Exclusive Winter Destinations end -->
+
+    <!-- Unforgettable start  -->
+    <div class="unforgettable carousel-container py-[120px]  bg-white">
+      <div class="containers ">
+        <div class="relative">
+          <div class="lg:w-[590px] max-w-full flex flex-col justify-center items-start gap-4 lg:text-start text-center">
+            <h2 class="lg:w-[450px] max-w-full justify-start  text-5xl font-semibold leading-[52.80px]">
+              <span class="text-zinc-950">Unforgettable
+              </span>
+              <span class="text-gray-500">Winter
+                Experiences</span>
+            </h2>
+            <p class="self-stretch justify-start text-gray-500 text-base font-normal leading-normal">
+              At
+              Pinnacle Winter Escapes, we craft unique journeys that immerse you in the heart of winter’s magic,
+              blending
+              exclusivity, adventure, and local charm.</p>
+          </div>
+          <div class="hidden lg:flex justify-end items-center gap-2 relative -mt-[52px]">
+            <button type="button"
+              class="prev p-3.5 rounded outline-1 outline-offset-[-1px] outline-gray-200 flex justify-start items-center gap-2.5 cursor-pointer">
+              <img src="img/arrow-left-black.svg" alt="img" class="w-[24px]">
+
+            </button>
+            <button class="next p-3.5  bg-zinc-950 rounded flex justify-start items-center gap-2.5 cursor-pointer">
+              <img src="img/arrow-right-white.svg" alt="img" class="w-[24px]">
+
+            </button>
+          </div>
+          <!-- slider item start  -->
+          <div class="carousel flex flex-col lg:flex-row flex-wrap lg:gap-[2%] gap-y-5 justify-between mt-16 ">
+            <!-- Left Card -->
+            <div class="lg:w-[29%] left-card">
+              <div class="p-7 bg-gray-50 rounded-lg inline-flex flex-col justify-start items-start gap-8">
+                <div class="self-stretch flex flex-col justify-start items-start gap-2">
+                  <h3 class="left-title self-stretch justify-start text-black text-xl font-semibold leading-loose">
+                  </h3>
+                  <p class="left-desc self-stretch justify-start text-gray-500 text-base font-normal leading-normal">
+                  </p>
+                </div>
+                <div class="self-stretch flex justify-start items-center gap-4">
+                  <img class="w-14 h-14 rounded-full left-avatar " src="" alt="user">
+                  <div class="flex-1 flex flex-col justify-start items-start ">
+                    <h4 class="left-name self-stretch justify-start text-black text-lg font-semibold leading-relaxed">
+                    </h4>
+                    <p class="left-role self-stretch justify-start text-gray-500 text-base font-normal leading-normal">
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+            <!-- Center Card -->
+            <div class="lg:w-[38%] center-card lg:min-h-[465px]">
+              <img src="" alt="img" class="center-img w-full">
+              <div class="p-7 !pt-4 bg-white rounded-lg inline-flex flex-col justify-start items-start gap-8">
+
+                <div class="self-stretch flex flex-col justify-start items-start gap-2">
+
+                  <h3 class="center-title self-stretch justify-start text-black text-xl font-semibold leading-loose">
+                  </h3>
+                  <p class="center-desc self-stretch justify-start text-gray-500 text-base font-normal leading-normal">
+                  </p>
+                </div>
+                <div class="self-stretch flex justify-start items-center gap-4">
+                  <img class="w-14 h-14 rounded-full center-avatar hidden" src="" alt="user">
+                  <div class="flex-1 flex flex-row justify-between items-center gap-2 ">
+                    <h4 class="center-name self-stretch justify-start text-black text-lg font-semibold leading-relaxed">
+                    </h4>
+                    <p
+                      class="center-role self-stretch justify-start text-gray-500 text-base font-normal leading-normal">
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Right Card -->
+            <div class="lg:w-[29%] right-card">
+              <div class="p-7 bg-gray-50 rounded-lg inline-flex flex-col justify-start items-start gap-8">
+                <div class="self-stretch flex flex-col justify-start items-start gap-2">
+                  <h3 class="right-title self-stretch justify-start text-black text-xl font-semibold leading-loose">
+                  </h3>
+                  <p class="right-desc self-stretch justify-start text-gray-500 text-base font-normal leading-normal">
+                  </p>
+                </div>
+                <div class="self-stretch flex justify-start items-center gap-4">
+                  <img class="right-avatar w-14 h-14 rounded-full" src="" alt="user">
+                  <div class="flex-1 flex flex-col justify-start items-start ">
+                    <h4 class="right-name self-stretch justify-start text-black text-lg font-semibold leading-relaxed">
+                    </h4>
+                    <p class="right-role self-stretch justify-start text-gray-500 text-base font-normal leading-normal">
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- single item end -->
+          </div>
+          <!-- slider item end -->
+          <div
+            class="flex flex-row justify-between items-center gap-4 lg:absolute lg:bottom-[18%] lg:left-0 lg:right-0 mx-auto w-full lg:mt-0 mt-8">
+            <div class="counter flex items-center space-x-1">
+              <span class="current text-zinc-950 text-2xl font-semibold leading-9">1</span>
+              <span class="slash text-gray-600 text-base font-normal leading-normal">/3</span>
+            </div>
+
+            <!-- <div class="lg:w-60 w-[150px] h-[5px] relative">
+                <div class="lg:w-60 w-[150px] h-[5px] left-0 top-0 absolute bg-gray-100 rounded-sm"></div>
+                <div class="lg:w-20 w-[36px] h-[5px] left-0 top-0 absolute bg-zinc-950 rounded-sm"></div>
+              </div> -->
+            <!-- Progress Bar -->
+            <div class="progress-container w-full mt-4">
+              <div class="progress"></div>
+            </div>
+
+            <!-- Controls -->
+            <div class="lg:hidden flex justify-end items-center gap-2">
+              <button type="button"
+                class=" prev lg:p-3.5 p-3 rounded outline-1 outline-offset-[-1px] outline-gray-200 flex justify-start items-center gap-2.5 cursor-pointer">
+                <img src="img/arrow-left-black.svg" alt="img" class="lg:w-[24px] w-4">
+
+              </button>
+              <button
+                class="next lg:p-3.5 p-3  bg-zinc-950 rounded flex justify-start items-center gap-2.5 cursor-pointer">
+                <img src="img/arrow-right-white.svg" alt="img" class="lg:w-[24px] w-4">
+
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Unforgettable end -->
+
+    <!-- Ready start  -->
+    <section class="bg-[url(../img/ready.png)] bg-cover bg-top bg-no-repeat py-[120px]">
+      <div class="containers">
+        <div class="mb-16 w-[532px] max-w-full mx-auto">
+          <h2 class="self-stretch text-center justify-start text-5xl font-semibold leading-[52.80px]">
+            <span class="text-gray-500 ">Ready for Your</span>
+            <span class="text-zinc-950 "> Winter Adventure?</span>
+          </h2>
+          <p class="self-stretch text-center justify-start text-gray-500 text-base font-normal leading-normal mt-4">
+            Let Pinnacle Winter Escapes craft your dream winter journey. Reach out today for a personalized consultation
+            with our
+            expert team.</p>
+        </div>
+        <form action="" class="p-8 bg-white rounded-xl flex flex-col justify-start items-start gap-8">
+          <h4 class="self-stretch justify-start text-zinc-950 text-xl font-semibold leading-loose">
+            Request a
+            Personal Consultation</h4>
+          <div class="grid grid-cols-1 md:grid-cols-11 gap-2 w-full">
+
+            <!-- Name Input -->
+            <div class="lg:col-span-3 col-span-1 relative">
+              <input type="text" placeholder="Name"
+                class="w-full pr-10 pl-4 py-3 rounded-lg bg-gray-50 text-gray-700 placeholder-gray-500 border border-gray-200 focus:outline-none focus:ring-1 focus:ring-black focus:border-black text-base font-normal leading-normal" />
+              <div class="absolute inset-y-0 right-0 flex items-center pr-3 pointer-events-none">
+                <img src="./img/profile.svg" alt="profile">
+              </div>
+            </div>
+
+            <!-- Phone Number Input -->
+            <div class="lg:col-span-3 col-span-1 relative">
+              <input type="text" placeholder="Phone Number"
+                class="w-full pr-10 pl-4 py-3 rounded-lg bg-gray-50 text-gray-700 placeholder-gray-500 border border-gray-200 focus:outline-none focus:ring-1 focus:ring-black focus:border-black text-base font-normal leading-normal" />
+              <div class="absolute inset-y-0 right-0 flex items-center pr-3 pointer-events-none">
+                <img src="./img/call.svg" alt="call">
+              </div>
+            </div>
+
+            <!-- Message Input -->
+            <div class="lg:col-span-3 col-span-1 relative">
+              <input type="text" placeholder="Type Your Message"
+                class="w-full pr-10 pl-4 py-3 rounded-lg bg-gray-50 text-gray-700 placeholder-gray-500 border border-gray-200 focus:outline-none focus:ring-1 focus:ring-black focus:border-black text-base font-normal leading-normal"
+                text-gray-700 text-base font-normal leading-normal />
+              <div class="absolute inset-y-0 right-0 flex items-center pr-3 pointer-events-none">
+                <img src="./img/edit-2.svg" alt="edit">
+              </div>
+            </div>
+
+            <div class="lg:col-span-2 col-span-1">
+              <!-- Submit Button -->
+              <button type="submit"
+                class="flex items-center w-full justify-center gap-2 bg-black text-white py-3 px-6 rounded-lg font-medium hover:shadow-[5px_5px_10px_0px_rgba(0,0,0,0.10)] hover:translate-y-0.5 transform transition-all duration-200">
+                <img src="./img/arrow-right.png" alt="arrow-right" class="w-[18px]">
+                <span>Submit Request</span>
+              </button>
+            </div>
+
+          </div>
+          <p class="self-stretch justify-start text-gray-500 text-base font-normal leading-normal">
+            <span class="">Prefer to speak directly? Contact us
+              at </span>
+            <a href="mailto:info@examplecompany.com" class="text-zinc-950 t">info@examplecompany.com</a>
+            <span class=""> or call </span>
+            <a href="tel:+1234567890" class="text-zinc-950 t">+1 (234) 567-890</a>
+            <span class="">.</span>
+          </p>
+
+        </form>
+      </div>
+
+    </section>
+    <!-- Ready end  -->
+
+
+
+
+
+  </main>
+  <footer class="pt-10 lg:pt-36 pb-6 lg:pb-10 bg-white rounded-[32px]">
+    <div class="containers grid grid-cols-2 md:grid-cols-10 gap-8">
+      <!-- Left Section -->
+      <div class="col-span-2 lg:col-span-5 flex flex-col justify-between items-start gap-8">
+        <div class="">
+          <img src="./img/logo.png" alt="logo" class="w-[184px] mb-8">
+          <p class="text-gray-600 text-sm lg:w-[395px] max-w-full">
+            Lorem ipsum dolor sit amet consectetur. Diam nunc nunc tellus nunc amet sem tortor ultricies. Ut viverra
+            ornare
+            integer pharellus in id cras est.
+          </p>
+        </div>
+        <ul class="flex justify-start items-center gap-x-4  ">
+          <li><a href=""
+              class="hover:shadow-[5px_5px_10px_0px_rgba(0,0,0,0.10)] hover:translate-y-0.5 transform transition-all duration-200 inline-block"><img
+                src="./img/facebook.svg" alt="facebook"></a></li>
+          <li><a href=""
+              class="hover:shadow-[5px_5px_10px_0px_rgba(0,0,0,0.10)] hover:translate-y-0.5 transform transition-all duration-200 inline-block"><img
+                src="./img/Instagram.svg" alt="Instagram"></a></li>
+          <li><a href=""
+              class="hover:shadow-[5px_5px_10px_0px_rgba(0,0,0,0.10)] hover:translate-y-0.5 transform transition-all duration-200 inline-block"><img
+                src="./img/LinkedIn.svg" alt="LinkedIn"></a></li>
+          <li><a href=""
+              class="hover:shadow-[5px_5px_10px_0px_rgba(0,0,0,0.10)] hover:translate-y-0.5 transform transition-all duration-200 inline-block"><img
+                src="./img/x.svg" alt="x"></a></li>
+          <li><a href=""
+              class="hover:shadow-[5px_5px_10px_0px_rgba(0,0,0,0.10)] hover:translate-y-0.5 transform transition-all duration-200 inline-block"><img
+                src="./img/youtube.svg" alt="youtube"></a></li>
+        </ul>
+      </div>
+
+
+      <!-- Column 1: Helsinki -->
+      <div class="col-span-1 ">
+        <h3 class=" text-zinc-950 text-xl font-semibold leading-loose mb-8">Helski</h3>
+        <ul class="text-gray-600 text-sm space-y-4">
+          <li><a href="#" class="text-gray-800 text-base font-semibold leading-normal hover:underline">Canada</a>
+          </li>
+          <li><a href="#" class="text-gray-800 text-base font-semibold leading-normal hover:underline">Alaska</a>
+          </li>
+          <li><a href="#" class="text-gray-800 text-base font-semibold leading-normal hover:underline">India</a>
+          </li>
+          <li><a href="#" class="text-gray-800 text-base font-semibold leading-normal hover:underline">Iceland</a>
+          </li>
+          <li><a href="#" class="text-gray-800 text-base font-semibold leading-normal hover:underline">Sweden</a>
+          </li>
+          <li><a href="#" class="text-gray-800 text-base font-semibold leading-normal hover:underline">Turkey</a>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Column 2: Ski -->
+      <div class="col-span-1 ">
+        <h3 class=" text-zinc-950 text-xl font-semibold leading-loose mb-8">Ski</h3>
+        <ul class="text-gray-600 text-sm space-y-4">
+          <li><a href="#" class="text-gray-800 text-base font-semibold leading-normal hover:underline">Japan</a>
+          </li>
+          <li><a href="#" class="text-gray-800 text-base font-semibold leading-normal hover:underline">Alaska</a>
+          </li>
+          <li><a href="#" class="text-gray-800 text-base font-semibold leading-normal hover:underline">Canada</a>
+          </li>
+          <li><a href="#" class="text-gray-800 text-base font-semibold leading-normal hover:underline">USA</a>
+          </li>
+        </ul>
+      </div>
+      <div class="col-span-1 lg:col-span-2 ">
+        <h3 class=" text-zinc-950 text-xl font-semibold leading-loose mb-8">Winter Adventure</h3>
+        <ul class="text-gray-600 text-sm space-y-4">
+          <li><a href="#" class="text-gray-800 text-base font-semibold leading-normal hover:underline">Winter
+              Adventurre</a></li>
+        </ul>
+      </div>
+      <!-- Column 3: Winter Adventure & About Us -->
+      <div class="col-span-1 ">
+        <h3 class=" text-zinc-950 text-xl font-semibold leading-loose mb-8">About Us</h3>
+        <ul class="text-gray-600 text-sm space-y-4">
+          <li><a href="#" class="text-gray-800 text-base font-semibold leading-normal hover:underline">Who we
+              are</a></li>
+          <li><a href="#" class="text-gray-800 text-base font-semibold leading-normal hover:underline">News</a>
+          </li>
+          <li><a href="#" class="text-gray-800 text-base font-semibold leading-normal hover:underline">Job
+              Offers</a></li>
+          <li><a href="#" class="text-gray-800 text-base font-semibold leading-normal hover:underline">Contract</a>
+          </li>
+        </ul>
+      </div>
+
+    </div>
+
+    <div class="containers mt-16 text-center">
+      <p class="self-stretch justify-start text-zinc-950/60 text-lg font-semibold font-['Urbanist'] leading-relaxed">
+        Copyright © <span id="year"></span> Brand | All Rights Reserved
+      </p>
+    </div>
+  </footer>
+
+  <script src="./js/index.js"></script>
+
+  <!-- JavaScript -->
+  <script>
+    // Slides Data
+    const slidesData = [
+      {
+        title: "Your <span class='text-black font-bold'>Powder</span> Adventure <br> <span class='text-gray-700'>Begins Here</span>",
+        description: "Lorem ipsum dolor sit amet consectetur. Neque interdum auctor sem pulvinar hendrerit auctor nunc.",
+        button: "Start Your Journey",
+        background: "./img/banner-image.png",
+        image: "./img/image.png"// Add image source
+      },
+      {
+        title: "Your <span class='text-black font-bold'>Powder</span> Adventure <br> <span class='text-gray-700'>Begins Here 2</span>",
+        description: "Explore the world’s most beautiful places with us. Your journey begins now.",
+        button: "Start Your Journey",
+        background: "./img/banner-image.png",
+        image: "./img/image.png" // Add image source
+      }
+    ];
+
+    // Target Elements
+    const slide = document.querySelector('.slide');
+    const title = document.getElementById('slide-title');
+    const description = document.getElementById('slide-description');
+    const button = document.getElementById('slide-button');
+    const nextBtns = document.querySelectorAll('.next-slide');
+    const currentSlideNums = document.querySelectorAll('.current-slide');
+    const totalSlideNums = document.querySelectorAll('.total-slide');
+
+    let currentIndexNew = 0;
+    let slideIntervalNew;
+
+    // Format number with leading zero
+    function formatNumber(number) {
+      return number < 10 ? `0${number}` : number;
+    }
+
+    // Update Slide Function
+    // Update Slide Function
+    function updateSlide(index) {
+      const data = slidesData[index];
+
+      // Fade Out
+      slide.classList.add('fade-out');
+
+      setTimeout(() => {
+        slide.style.backgroundImage = `url('${data.background}')`;
+        document.getElementById('slide-title').innerHTML = data.title;
+        document.getElementById('slide-description').innerText = data.description;
+
+        const button = document.getElementById('slide-button');
+        button.href = data.buttonLink || "#";  // <-- optional link if you want dynamic
+        button.querySelector('.buttonText').innerText = data.button; // <-- update button text
+
+        currentSlideNums.forEach(num => {
+          num.innerText = formatNumber(index + 1);
+        });
+
+        // Update Image Source
+        const userImage = document.getElementById('sliderImage');
+        userImage.src = data.image;  // Dynamically update the image source
+
+        // Fade In
+        slide.classList.remove('fade-out');
+        slide.classList.add('fade-in');
+      }, 500);
+    }
+
+    // Next Slide
+    function nextSlideNew() {
+      currentIndexNew = (currentIndexNew + 1) % slidesData.length;
+      updateSlide(currentIndexNew);
+    }
+
+    // Start Auto Slide
+    function startAutoSlide() {
+      slideIntervalNew = setInterval(nextSlideNew, 6000);
+    }
+
+    // Reset Auto Slide
+    function resetAutoSlide() {
+      clearInterval(slideIntervalNew);
+      startAutoSlide();
+    }
+
+    // Attach Next Button Clicks
+    nextBtns.forEach(btn => {
+      btn.addEventListener('click', () => {
+        nextSlideNew();
+        resetAutoSlide();
+      });
+    });
+
+    // Init
+    totalSlideNums.forEach(total => {
+      total.innerText = `/${formatNumber(slidesData.length)}`;
+    });
+
+    updateSlide(currentIndexNew);
+    startAutoSlide();
+
+  </script>
+  <!-- JS for Filtering -->
+  <script>
+    const filterButtons = document.querySelectorAll('.filter-btn');
+    const cards = document.querySelectorAll('.card');
+
+    // Function to handle filter logic
+    const filterCards = (filter) => {
+      cards.forEach(card => {
+        const tags = card.getAttribute('data-tags');
+        if (tags.includes(filter)) {
+          card.classList.remove('hidden');
+        } else {
+          card.classList.add('hidden');
+        }
+      });
+    };
+
+    // Initial filter when the page loads
+    filterCards('Heliskiing');
+
+    filterButtons.forEach(button => {
+      button.addEventListener('click', () => {
+        const filter = button.getAttribute('data-filter');
+
+        // Apply the filter
+        filterCards(filter);
+
+        // Optional: Highlight active filter button bg-gray-50 outline-gray-100
+        filterButtons.forEach(btn => btn.classList.remove('active-filter'));
+        button.classList.add('active-filter');
+      });
+    });
+  </script>
+
+  <script>
+    const slides = [
+      {
+        title: "Secret Winter Havens",
+        desc: "Discover untouched slopes and secluded retreats, far from the crowds.",
+        name: "Erica Rose",
+        role: "Winter Explorer",
+        img: "./img/user-image.png",
+        avatar: "./img/user.png",
+      },
+      {
+        title: "Mountain Escape",
+        desc: "Feel the fresh air and view breathtaking landscapes away from cities.",
+        name: "John Doe",
+        role: "Mountain Climber",
+        img: "./img/user-image.png",
+        avatar: "./img/user.png",
+      },
+      {
+        title: "Cozy Winter Cabins",
+        desc: "Find warmth and comfort in our luxurious winter cabins.",
+        name: "Jane Smith",
+        role: "Snowboarder",
+        img: "./img/user-image.png",
+        avatar: "./img/user.png",
+      },
+      {
+        title: "Mountain Escape",
+        desc: "Feel the fresh air and view breathtaking landscapes away from cities.",
+        name: "John Doe",
+        role: "Mountain Climber",
+        img: "./img/user-image.png",
+        avatar: "./img/user.png",
+      },
+      {
+        title: "Cozy Winter Cabins",
+        desc: "Find warmth and comfort in our luxurious winter cabins.",
+        name: "Jane Smith",
+        role: "Snowboarder",
+        img: "./img/user-image.png",
+        avatar: "./img/user.png",
+      },
+    ];
+
+    let currentIndex = 0;
+    let autoSlideInterval;
+
+    const container = document.querySelector('.carousel-container');
+    const carousel = container.querySelector('.carousel');
+    const progress = container.querySelector('.progress');
+
+    const leftCard = {
+      el: container.querySelector('.left-card'),
+      avatar: container.querySelector('.left-avatar'),
+      name: container.querySelector('.left-name'),
+      role: container.querySelector('.left-role'),
+      title: container.querySelector('.left-title'),
+      desc: container.querySelector('.left-desc'),
+    };
+
+    const centerCard = {
+      el: container.querySelector('.center-card'),
+      img: container.querySelector('.center-img'),
+      avatar: container.querySelector('.center-avatar'),
+      name: container.querySelector('.center-name'),
+      role: container.querySelector('.center-role'),
+      title: container.querySelector('.center-title'),
+      desc: container.querySelector('.center-desc'),
+    };
+
+    const rightCard = {
+      el: container.querySelector('.right-card'),
+      avatar: container.querySelector('.right-avatar'),
+      name: container.querySelector('.right-name'),
+      role: container.querySelector('.right-role'),
+      title: container.querySelector('.right-title'),
+      desc: container.querySelector('.right-desc'),
+    };
+
+    function updateCarousel() {
+      const left = slides[(currentIndex - 1 + slides.length) % slides.length];
+      const center = slides[currentIndex];
+      const right = slides[(currentIndex + 1) % slides.length];
+
+      // Update Left Card
+      leftCard.avatar.src = left.avatar;
+      leftCard.name.textContent = left.name;
+      leftCard.role.textContent = left.role;
+      leftCard.title.textContent = left.title;
+      leftCard.desc.textContent = left.desc;
+
+      // Update Center Card
+      centerCard.img.src = center.img;
+      centerCard.avatar.src = center.avatar;
+      centerCard.name.textContent = center.name;
+      centerCard.role.textContent = center.role;
+      centerCard.title.textContent = center.title;
+      centerCard.desc.textContent = center.desc;
+
+      // Update Right Card
+      rightCard.avatar.src = right.avatar;
+      rightCard.name.textContent = right.name;
+      rightCard.role.textContent = right.role;
+      rightCard.title.textContent = right.title;
+      rightCard.desc.textContent = right.desc;
+
+      // Remove active first
+      leftCard.el.classList.remove('active');
+      centerCard.el.classList.remove('active');
+      rightCard.el.classList.remove('active');
+
+      // Add active to center
+      centerCard.el.classList.add('active');
+
+      // Update Counter separately
+      const currentEl = container.querySelector('.counter .current');
+      const slashEl = container.querySelector('.counter .slash');
+      currentEl.textContent = `${currentIndex + 1}`;
+      slashEl.textContent = `/${slides.length}`;
+
+      // Update Progress
+      progress.style.width = `${((currentIndex + 1) / slides.length) * 100}%`;
+    }
+
+    function nextSlide() {
+      currentIndex = (currentIndex + 1) % slides.length;
+      updateCarousel();
+    }
+
+    function prevSlide() {
+      currentIndex = (currentIndex - 1 + slides.length) % slides.length;
+      updateCarousel();
+    }
+
+    container.querySelectorAll('.next').forEach(button => {
+      button.addEventListener('click', nextSlide);
+    });
+
+    container.querySelectorAll('.prev').forEach(button => {
+      button.addEventListener('click', prevSlide);
+    });
+
+    function startAutoSlide() {
+      autoSlideInterval = setInterval(nextSlide, 5000);
+    }
+
+    function stopAutoSlide() {
+      clearInterval(autoSlideInterval);
+    }
+
+    container.addEventListener('mouseenter', stopAutoSlide);
+    container.addEventListener('mouseleave', startAutoSlide);
+
+    updateCarousel();
+    startAutoSlide();
+  </script>
+
+</body>
+
+</html>
